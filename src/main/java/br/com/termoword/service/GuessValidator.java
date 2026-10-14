@@ -23,6 +23,10 @@ public class GuessValidator {
     public Word validate(String word){
         String normalizedWord = wordNormalizer.normalize(word);
 
+        if(normalizedWord.length() != 5){
+            throw new InvalidGuessException(normalizedWord);
+        }
+
         return wordRepository
             .findByWordIgnoreCaseAndActiveTrue(normalizedWord)
             .orElseThrow(() -> new InvalidGuessException(normalizedWord));
