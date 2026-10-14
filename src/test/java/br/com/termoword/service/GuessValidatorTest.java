@@ -85,4 +85,42 @@ public class GuessValidatorTest {
         verify(wordNormalizer).normalize("CARRO");
         verify(wordRepository).findByWordIgnoreCaseAndActiveTrue("CARRO");
     }
+    
+    @Test 
+    void shouldNormalizeGuessBeforeSearchingWord(){
+
+        Word word = new Word();
+        word.setWord("CARRO");
+        word.setLanguage("pt-BR");
+        word.setActive(true);
+
+        when(wordNormalizer.normalize("   carro   "))
+            .thenReturn("CARRO");
+        
+        when(wordRepository.findByWordIgnoreCaseAndActiveTrue("CARRO"))
+            .thenReturn(Optional.of(word));
+
+        Word result = guessValidator.validate("   carro   ");
+
+        assertThat(result).isSameAs(word);
+
+        verify(wordNormalizer).normalize("   carro   ");
+
+        verify(wordRepository).findByWordIgnoreCaseAndActiveTrue("CARRO");
+    }
+
+    @Test 
+    void shouldRejectGuessWithInvalidLength(){
+
+        when(wordNormalizer.normalize("SOL"))
+            .thenReturn("SOL");
+        
+        assertThatThrownBy(() -> guessValidator.validate("SOL"))
+            .isInstanceOf(InvalidGuessException.class);
+        
+        verify(wordNormalizer).normalize("SOL");
+
+        verify(wordRepository, never())
+            .findByWordIgnoreCaseAndActiveTrue(anyString());
+    }
 }
