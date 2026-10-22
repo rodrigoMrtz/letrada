@@ -1,6 +1,6 @@
-package br.com.termoword.repository;
+package br.com.letrada.repository;
 
-import br.com.termoword.entity.Word;
+import br.com.letrada.entity.Word;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

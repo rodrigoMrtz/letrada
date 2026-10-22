@@ -1,11 +1,11 @@
-package br.com.termoword.service;
+package br.com.letrada.service;
 
-import br.com.termoword.entity.Word;
-import br.com.termoword.exception.WordNotFoundException;
-import br.com.termoword.dto.word.CreateWordRequest;
-import br.com.termoword.dto.word.WordResponse;
-import br.com.termoword.repository.WordRepository;
-import br.com.termoword.dto.word.UpdateWordRequest;
+import br.com.letrada.entity.Word;
+import br.com.letrada.exception.WordNotFoundException;
+import br.com.letrada.dto.word.CreateWordRequest;
+import br.com.letrada.dto.word.WordResponse;
+import br.com.letrada.repository.WordRepository;
+import br.com.letrada.dto.word.UpdateWordRequest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -87,7 +87,7 @@ class WordServiceTest {
         assertThatThrownBy(
             () -> wordService.findById(999L)
         )
-            .isInstanceOf(br.com.termoword.exception.WordNotFoundException.class)
+            .isInstanceOf(br.com.letrada.exception.WordNotFoundException.class)
             .hasMessage("Palavra nao encontrada com o id:999");
         
         verify(wordRepository).findById(999L);

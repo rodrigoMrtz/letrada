@@ -1,13 +1,13 @@
-package br.com.termoword;
+package br.com.letrada;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TermowordApplication {
+public class LetradaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TermowordApplication.class, args);
+		SpringApplication.run(LetradaApplication.class, args);
 	}
 
 }

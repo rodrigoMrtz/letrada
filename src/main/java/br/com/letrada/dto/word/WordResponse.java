@@ -1,6 +1,6 @@
-package br.com.termoword.dto.word;
+package br.com.letrada.dto.word;
 
-import br.com.termoword.entity.Word;
+import br.com.letrada.entity.Word;
 
 import java.time.LocalDateTime;
 

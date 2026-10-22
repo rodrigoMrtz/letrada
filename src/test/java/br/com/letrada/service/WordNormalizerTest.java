@@ -1,4 +1,4 @@
-package br.com.termoword.service;
+package br.com.letrada.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

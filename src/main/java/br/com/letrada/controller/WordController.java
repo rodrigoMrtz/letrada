@@ -1,9 +1,9 @@
-package br.com.termoword.controller;
+package br.com.letrada.controller;
 
-import br.com.termoword.service.WordService;
-import br.com.termoword.dto.word.CreateWordRequest;
-import br.com.termoword.dto.word.UpdateWordRequest;
-import br.com.termoword.dto.word.WordResponse;
+import br.com.letrada.service.WordService;
+import br.com.letrada.dto.word.CreateWordRequest;
+import br.com.letrada.dto.word.UpdateWordRequest;
+import br.com.letrada.dto.word.WordResponse;
 
 import jakarta.validation.Valid;
 

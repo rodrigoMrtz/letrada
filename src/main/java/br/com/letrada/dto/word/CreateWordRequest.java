@@ -1,4 +1,4 @@
-package br.com.termoword.dto.word;
+package br.com.letrada.dto.word;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

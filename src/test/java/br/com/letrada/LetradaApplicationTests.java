@@ -1,10 +1,10 @@
-package br.com.termoword;
+package br.com.letrada;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TermowordApplicationTests {
+class LetradaApplicationTests {
 
 	@Test
 	void contextLoads() {

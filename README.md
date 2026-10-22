@@ -1,4 +1,4 @@
-# TermoWord
+# Letrada
 
 API REST para um jogo de palavras desenvolvido com Java e Spring Boot.
 

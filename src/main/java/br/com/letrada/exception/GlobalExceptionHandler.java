@@ -1,4 +1,4 @@
-package br.com.termoword.exception;
+package br.com.letrada.exception;
 
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.http.HttpStatus;

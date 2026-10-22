@@ -1,4 +1,4 @@
-package br.com.termoword.entity;
+package br.com.letrada.entity;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package br.com.termoword.exception;
+package br.com.letrada.exception;
 
 import java.time.LocalDateTime;
 

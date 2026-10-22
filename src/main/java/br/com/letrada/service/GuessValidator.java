@@ -1,8 +1,8 @@
-package br.com.termoword.service;
+package br.com.letrada.service;
 
-import br.com.termoword.entity.Word;
-import br.com.termoword.exception.InvalidGuessException;
-import br.com.termoword.repository.WordRepository;
+import br.com.letrada.entity.Word;
+import br.com.letrada.exception.InvalidGuessException;
+import br.com.letrada.repository.WordRepository;
 
 import org.springframework.stereotype.Service;
 

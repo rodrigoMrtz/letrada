@@ -2,7 +2,7 @@ spring:
   config:
     import: "optional:file:.env[.properties]"
   application:
-    name: termoword
+    name: letrada
   
   # Configuração da conexão com o banco de dados PostgreSQL
   datasource:
